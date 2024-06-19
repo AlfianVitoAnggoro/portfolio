@@ -119,6 +119,27 @@ const Timeline = () => {
         className="vertical-timeline-element--work"
         contentStyle={{ background: 'rgb(38, 38, 38)', color: '#fff' }}
         contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
+        date="Jan, 2023 - Mei, 2023"
+        iconStyle={{
+          background: 'rgb(0, 0, 0)',
+          color: '#fff',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '10px',
+        }}
+        icon={<WorkIcon />}
+      >
+        <h3 className="vertical-timeline-element-title">
+          Back End Developer intern
+        </h3>
+        <h4 className="vertical-timeline-element-subtitle">Intelligo ID</h4>
+        <p>-Maintenance with Laravel, Slim4, NuxtJS, dan VueJS</p>
+      </VerticalTimelineElement>
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: 'rgb(38, 38, 38)', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
         date="Jan, 2023 - May, 2023"
         iconStyle={{
           background: 'rgb(0, 0, 0)',
