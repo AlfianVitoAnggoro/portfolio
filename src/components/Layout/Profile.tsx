@@ -56,7 +56,7 @@ export default function Profile() {
               </p>
             </div>
           </div>
-          <div className="laptop:basis-1/3 w-full h-full ">
+          <div className="laptop:basis-1/3 w-full h-full flex justify-end items-end">
             <img
               src="images/profiles/2.png"
               width={100}
