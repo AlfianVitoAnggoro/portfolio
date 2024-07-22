@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <>
       <div className="bg-black flex justify-center items-center">
-        <div className="min-h-screen  flex-col gap-5 py-10 mx-5 text-white max-w-[1024px]">
+        <div className="min-h-screen flex-col gap-x-5 py-10 text-white max-w-[1024px]">
           <h1 className="text-center font-bold text-[3rem] mb-3">Projects</h1>
           <div className="flex flex-col items-center justify-center ">
             {PROJECTS_DATA.map((item: ProjectType, i: number) => (

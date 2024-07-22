@@ -29,7 +29,7 @@ const ProjectCard: React.FC<React.PropsWithChildren<ProjectCardProps>> = ({
           <CardItem
             as="p"
             translateZ="60"
-            className="text-neutral-500 text-[1.2rem] w-full mt-2 dark:text-neutral-300"
+            className="text-neutral-500 text-[1.2rem] max-h-[200px] h-auto overflow-y-auto w-full mt-2 dark:text-neutral-300"
           >
             {children}
           </CardItem>

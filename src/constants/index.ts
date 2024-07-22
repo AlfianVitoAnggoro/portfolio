@@ -40,6 +40,22 @@ export const PROJECTS_DATA: ProjectType[] = [
     imageUrl: '/images/projects/join-code.png',
     projectUrl: 'https://joincode.site/',
   },
+  {
+    id: 6,
+    name: 'Dashboard Job Hunt',
+    description:
+      'Dashboard Jub Hunt is individual projects trained by me, this project was builded with Next.JS, TailwindCSS, Prisma ORM, Supabase, Vercel, Shadcn UI.',
+    imageUrl: '/images/projects/bwa-dashboard-job-hunt.png',
+    projectUrl: 'https://bwa-dashboard-job-hunt-kappa.vercel.app/auth/signin',
+  },
+  {
+    id: 7,
+    name: 'Job Hunt',
+    description:
+      'Jub Hunt is individual projects trained by me, this project was builded with Next.JS, TailwindCSS, Prisma ORM, Supabase, Vercel, Shadcn UI. This app has been include Choose Language with I18N',
+    imageUrl: '/images/projects/bwa-job-hunt.png',
+    projectUrl: 'https://bwa-job-hunt-taupe.vercel.app/',
+  },
 ];
 
 export const CERTIFICATES_DATA: CertificateType[] = [
@@ -97,7 +113,7 @@ export const CERTIFICATES_DATA: CertificateType[] = [
       'Kelas ini ditujukan untuk Back-End Developer yang ingin mengetahui cara mengelola dan mengamankan dengan baik di server, dengan mengacu pada standar industri yang divalidasi AWS. Di akhir kelas, siswa dapat membuat aplikasi back-end berupa RESTful API yang menerapkan Database, Authentication dan Authorization, Message Broker, Storage, dan Caching sesuai studi kasus yang ada dalam dunia nyata.',
   },
   {
-    id: 6,
+    id: 7,
     imageUrl: '/images/certificates/mern-stack-bwa.png',
     author: 'BuildWithAngga',
     year: 2023,
@@ -105,7 +121,7 @@ export const CERTIFICATES_DATA: CertificateType[] = [
     description: 'MongoDB, ExpressJS, ReactJS, NodeJS, dan TailwindCSS',
   },
   {
-    id: 6,
+    id: 8,
     imageUrl: '/images/certificates/memulai-pemrograman-dengan-dart.png',
     author: 'Dicoding Indonesia',
     year: 2023,
@@ -114,7 +130,7 @@ export const CERTIFICATES_DATA: CertificateType[] = [
       'Kelas ditujukan bagi pemula yang ingin belajar dasar bahasa pemrograman Dart dengan mengacu pada standar industri. Di akhir kelas, siswa dapat membuat program Dart dengan menggunakan IDE IntelliJ IDEA atau IDE Online seperti DartPad.',
   },
   {
-    id: 7,
+    id: 10,
     imageUrl: '/images/certificates/laboratory-assistant-unsika.png',
     author: 'FASILKOM UNSIKA',
     year: 2024,
@@ -122,7 +138,7 @@ export const CERTIFICATES_DATA: CertificateType[] = [
     description: 'Pengharga kontribusi menjadi assistant laboratory',
   },
   {
-    id: 8,
+    id: 11,
     imageUrl: '/images/certificates/nextjs-build-job-portal-website-bwa.png',
     author: 'BuildWithAngga',
     year: 2024,

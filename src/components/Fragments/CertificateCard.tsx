@@ -48,7 +48,7 @@ const CertificateCard = () => {
             <motion.div
               layoutId={`card-${active.certificateName}-${id}`}
               ref={ref}
-              className="relative w-[90%] max-w-[1024px] h-auto md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl "
+              className="relative w-[90%] max-w-[700px] h-auto md:h-fit laptop:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl "
             >
               <motion.div layoutId={`image-${active.certificateName}-${id}`}>
                 <img
@@ -103,7 +103,7 @@ const CertificateCard = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-800 text-sm md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-neutral-800 text-sm md:text-sm lg:text-base md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] h-40"
                   >
                     {active.description}
                   </motion.div>
@@ -113,7 +113,7 @@ const CertificateCard = () => {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="laptop:max-w-[1024px] mx-auto w-full grid grid-cols-1 laptop:grid-cols-2 items-start gap-4">
+      <ul className="laptop:max-w-[1024px] mx-auto w-full grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 items-start gap-4">
         {cards.map((card, index) => (
           <motion.div
             layoutId={`card-${card.certificateName}-${id}`}

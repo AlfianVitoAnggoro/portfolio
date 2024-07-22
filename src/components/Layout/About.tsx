@@ -1,29 +1,31 @@
-// import Spline from '@splinetool/react-spline';
 import ConnectLink from '../Fragments/ConnectLink';
+import { TextGenerateEffect } from '../ui/text-generate-effect';
 
 export default function About() {
+  const words = `I am a Fullstack Web
+  Developer from Bogor, Indonesia and a Bachelor's Degree from
+  Singaperbangsa Karawang University 2024. I start to learn
+  programming at 2020. I have some experience as a web developer in
+  various sectors such as industrial, individual project, team
+  project and more. I am familiar with React.JS, Next.JS, Laravel and Codeigniter. But I am interest for being a Back-End or Cloud Computing
+  Developer, and I am excited to bring my skills and leadership to
+  meaningful projects.
+`;
+
   return (
     <>
-      <div className="relative">
-        {/* <Spline
-          scene="https://prod.spline.design/SQORZ7fT4u6GjbZG/scene.splinecode"
-          className="absolute inset-0 w-full h-full object-cover"
-        /> */}
-        <div className="relative z-10 min-h-screen px-5 py-5 flex justify-evenly items-center gap-5 flex-col bg-black text-white">
-          <div className="space-y-3 max-w-[1024px]">
-            <h1 className="text-center font-bold text-3xl">About Me</h1>
+      <div className="relative bg-slate-950 flex justify-center items-center">
+        <div className="max-w-[1024px] min-h-screen flex flex-col justify-evenly items-center px-5 py-10 gap-5 text-white">
+          <div className="space-y-3 flex-1 flex flex-col justify-start items-center py-5 gap-5">
+            <h1 className="text-center font-bold text-3xl ">About Me</h1>
             <p className="text-center">
-              I am a Web Developer from Bogor, Indonesia and Fresh Graduate from
-              Singaperbangsa University Karawang. I start for learn programming
-              at 2020. I have some experience as a web developer in various
-              sectors such as industrial, individual project, team project and
-              more. I am proficient in Web Developer with React, Next.JS,
-              Codeigniter and Laravel and i am interest for being a Android
-              Developer with Flutter and Kotlin, and I am excited to bring my
-              skills and leadership to meaningful projects.
+              <TextGenerateEffect
+                words={words}
+                className="text-white text-[1.2rem]"
+              />
             </p>
           </div>
-          <div className="space-y-3 max-w-[1024px]">
+          <div className="space-y-3 h-full flex-1 flex flex-col justify-start items-center py-5 gap-5">
             <h1 className="text-center font-bold text-3xl">For Connect</h1>
             <div className="flex justify-center items-center gap-x-3">
               <ConnectLink
@@ -32,7 +34,7 @@ export default function About() {
                 alt="Github"
               />
               <ConnectLink
-                link="https://linkedin.com/alfianvitoanggoro"
+                link="https://linkedin.com/in/alfianvitoanggoro"
                 icon="Linkedin.svg"
                 alt="Linkedin"
               />

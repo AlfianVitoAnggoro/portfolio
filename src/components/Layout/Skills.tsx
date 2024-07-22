@@ -1,14 +1,18 @@
 import SkillCard from '../Fragments/SkillCard';
+import { Boxes } from '../ui/background-boxes';
 
 export default function Skills() {
   return (
     <>
-      <div className="bg-black">
-        <div className="min-h-screen flex justify-start items-center flex-col gap-5 py-10 laptop:justify-center text-white">
-          <h1 className="text-center font-bold text-3xl mb-3 max-w-[1024px]">
+      <div className="relative bg-black">
+        <div className="relative overflow-hidden min-h-screen flex justify-start items-center flex-col gap-5 p-10 laptop:justify-center text-white">
+          <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+
+          <Boxes />
+          <h1 className="text-center font-bold text-3xl mb-3 max-w-[1024px] relative z-20">
             Skills
           </h1>
-          <div className="grid grid-cols-2 tablet:grid-cols-4 laptop:grid-cols-7 gap-3 max-w-[1024px]">
+          <div className="grid grid-cols-2 tablet:grid-cols-4 laptop:grid-cols-7 gap-3 max-w-[1024px] relative z-20">
             <SkillCard image="NextJS.svg" name="NextJS" />
             <SkillCard image="ReactJS.svg" name="ReactJS" />
             <SkillCard image="TailwindCSS.svg" name="TailwindCSS" />

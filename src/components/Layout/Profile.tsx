@@ -1,62 +1,53 @@
 import '@fontsource/silkscreen/700.css';
 import { TypeAnimation } from 'react-type-animation';
+import { LampContainer } from '../ui/lamp';
+import { motion } from 'framer-motion';
+import { TextRevealCard } from '../ui/text-reveal-card';
+import { FlipWords } from '../ui/flip-words';
 
 export default function Profile() {
+  const words: any = ['Javascript', 'Typescript', 'PHP'];
   return (
     <>
-      <div
-        className="h-screen px-5 pt-10 flex justify-center items-center gap-5 flex-col"
-        style={{
-          backgroundImage:
-            'linear-gradient(to right bottom, #000000, #17000a, #210017, #270023, #280034, #28003f, #26004b, #200158, #28015e, #2f0165, #37016b, #3f0071)',
-        }}
-      >
+      <div className="h-screen px-5 py-10 flex justify-center items-center gap-5 flex-col bg-slate-950">
         <div className="flex justify-center items-center h-1/3 max-w-[1024px]">
-          <div className="flex flex-col gap-5 justify-center items-center text-white">
-            <h1 className="font-medium  text-2xl laptop:text-3xl text-center">
-              HELLO, I'M
-            </h1>
-            <h1 className="font-bold text-3xl laptop:text-4xl text-center">
-              Alfian Vito Anggoro
-            </h1>
-            <h1 className="font-normal text-xl laptop:text-2xl text-center">
-              <TypeAnimation
-                sequence={['Web Developer', 1500, 'Fullstack Developer', 1500]}
-                speed={50}
-                style={{ fontSize: '1em' }}
-                repeat={Infinity}
-              />
-            </h1>
+          <div className="flex flex-col gap-5 justify-center items-center text-white z-10">
+            <LampContainer className="mt-32 laptop:mt-20">
+              <motion.h1
+                initial={{ opacity: 0.5, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.3,
+                  duration: 0.8,
+                  ease: 'easeInOut',
+                }}
+                className="-mt-14 bg-gradient-to-br from-white to-slate-500 bg-clip-text text-center font-bold tracking-tight text-transparent md:text-7xl text-xl tablet:text-[2rem]"
+              >
+                HELLO, I'M <br />
+                <TextRevealCard
+                  text="ALFIAN VITO ANGGORO"
+                  revealText="FULLSTACK WEB DEVELOPER"
+                  className="mt-2"
+                ></TextRevealCard>
+                <br />
+              </motion.h1>
+            </LampContainer>
           </div>
         </div>
-        <div className="flex justify-center items-center h-2/3 max-w-[1024px]">
-          <div className="hidden laptop:basis-1/3 h-full text-white laptop:flex flex-col justify-between items-start py-5">
+        <div className="flex justify-center items-center h-2/3 max-w-[1024px] z-20">
+          <div className="hidden laptop:basis-1/4 h-full text-white laptop:flex flex-col justify-between items-start py-5">
             <div className="space-y-2">
-              <h1 className="text-2xl font-bold">Expertise</h1>
-              <p className="text-xl font-normal">
-                <TypeAnimation
-                  sequence={[
-                    'Javascript',
-                    1500,
-                    'Typescript',
-                    1500,
-                    'PHP',
-                    1500,
-                  ]}
-                  speed={50}
-                  style={{ fontSize: '1em' }}
-                  repeat={Infinity}
-                />
-              </p>
+              <h1 className="text-[1.7rem] font-bold">Expertise</h1>
+              <FlipWords words={words} className="text-white text-[1.2rem]" />
             </div>
             <div className="space-y-2">
-              <h1 className="text-2xl font-bold">Education</h1>
-              <p className="text-xl font-normal">
+              <h1 className="text-[1.7rem] font-bold">Education</h1>
+              <p className="text-[1.2rem] font-normal">
                 Bachelor's Degree of Singaperbangsa Karawang University
               </p>
             </div>
           </div>
-          <div className="laptop:basis-1/3 w-full h-full flex justify-end items-end">
+          <div className="laptop:basis-2/4 w-full h-full flex justify-center items-center">
             <img
               src="images/profiles/2.png"
               width={100}
@@ -65,21 +56,20 @@ export default function Profile() {
               className="w-auto h-full"
             />
           </div>
-          <div className="hidden laptop:basis-1/3 h-full text-white laptop:flex flex-col justify-between items-end text-end  py-5">
+          <div className="hidden laptop:basis-1/4 h-full text-white laptop:flex flex-col justify-between items-end text-end py-5">
             <div className="space-y-2">
-              <h1 className="text-2xl font-bold">Interest</h1>
-              <p className="text-xl font-normal">
+              <h1 className="text-[1.7rem] font-bold">Interest</h1>
+              <p className="text-xl font-normal text-[1.2rem]">
                 <TypeAnimation
                   sequence={['Flutter', 1500, 'Cloud', 1500, 'AI', 1500]}
                   speed={50}
-                  style={{ fontSize: '1em' }}
                   repeat={Infinity}
                 />
               </p>
             </div>
             <div className="space-y-2">
-              <h1 className="text-2xl font-bold">Live in</h1>
-              <p className="text-xl font-normal">Bogor, Indonesia</p>
+              <h1 className="text-[1.7rem] font-bold">Live in</h1>
+              <p className="text-[1.2rem] font-normal">Bogor, Indonesia</p>
             </div>
           </div>
         </div>
