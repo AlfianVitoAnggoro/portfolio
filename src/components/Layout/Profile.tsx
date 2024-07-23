@@ -55,7 +55,7 @@ export default function Profile() {
               alt="Alfian Vito Anggoro"
               className="w-auto h-full "
             />
-            <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-slate-950 to-transparent pointer-events-none"></div>
           </div>
           <div className="hidden laptop:basis-1/4 h-full text-white laptop:flex flex-col justify-between items-end text-end py-5">
             <div className="space-y-2">
