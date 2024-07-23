@@ -79,12 +79,14 @@ const Timeline = () => {
         }}
         icon={<WorkIcon />}
       >
-        <h3 className="vertical-timeline-element-title">Assistant Lecturer</h3>
+        <h3 className="vertical-timeline-element-title">
+          Laboratory Assistant
+        </h3>
         <h4 className="vertical-timeline-element-subtitle">
           University of Singaperbangsa Karawang
         </h4>
         <p>
-          Assistant Lecturer in informatics engineering for teaching Framework
+          Laboratory Assistant in informatics engineering for teaching Framework
           Pemrograman Web.
         </p>
       </VerticalTimelineElement>
@@ -151,9 +153,7 @@ const Timeline = () => {
         }}
         icon={<WorkIcon />}
       >
-        <h3 className="vertical-timeline-element-title">
-          Internship Trainee of Frontend and Backend
-        </h3>
+        <h3 className="vertical-timeline-element-title">Student FE & BE</h3>
         <h4 className="vertical-timeline-element-subtitle">
           Dicoding Indonesia
         </h4>

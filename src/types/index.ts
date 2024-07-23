@@ -14,3 +14,16 @@ export type CertificateType = {
   certificateName: string;
   description: string;
 };
+
+export type SocialMediaType = {
+  id: number;
+  name: string;
+  imageUrl: string;
+  socialMediaUrl: string;
+};
+
+export type SkillType = {
+  id: number;
+  name: string;
+  imageUrl: string;
+};

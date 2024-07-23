@@ -1,4 +1,9 @@
-import { CertificateType, ProjectType } from '@/types';
+import {
+  CertificateType,
+  ProjectType,
+  SkillType,
+  SocialMediaType,
+} from '@/types';
 
 export const PROJECTS_DATA: ProjectType[] = [
   {
@@ -146,4 +151,61 @@ export const CERTIFICATES_DATA: CertificateType[] = [
       'Full-Stack JavaScript Next JS Developer: Build Job Portal Website',
     description: 'Next.JS, ReactJS, TailwindCSS, and Prisma ORM, TypeScript',
   },
+];
+
+export const SOCIAL_MEDIA_DATA: SocialMediaType[] = [
+  {
+    id: 1,
+    name: 'Github',
+    imageUrl: '/images/social-media/github.svg',
+    socialMediaUrl: 'https://github.com/alfianvitoanggoro',
+  },
+  {
+    id: 2,
+    name: 'Linkedin',
+    imageUrl: '/images/social-media/linkedin.svg',
+    socialMediaUrl: 'https://linkedin.com/in/alfianvitoanggoro',
+  },
+  {
+    id: 3,
+    name: 'Instagram',
+    imageUrl: '/images/social-media/instagram.svg',
+    socialMediaUrl: 'https://instagram.com/atokemen_',
+  },
+  {
+    id: 4,
+    name: 'X',
+    imageUrl: '/images/social-media/x.svg',
+    socialMediaUrl: 'https://x.com/Atokemen_',
+  },
+  {
+    id: 5,
+    name: 'Youtube',
+    imageUrl: '/images/social-media/youtube.svg',
+    socialMediaUrl: 'https://youtube.com/@alfianvito',
+  },
+];
+
+export const SKILLS_DATA: SkillType[] = [
+  { id: 1, name: 'HTML', imageUrl: '/images/skills/html.svg' },
+  { id: 2, name: 'CSS', imageUrl: '/images/skills/css.svg' },
+  { id: 3, name: 'Javascript', imageUrl: '/images/skills/javascript.svg' },
+  { id: 4, name: 'ReactJS', imageUrl: '/images/skills/react-js.svg' },
+  { id: 5, name: 'NextJS', imageUrl: '/images/skills/next-js.svg' },
+  { id: 6, name: 'NodeJS', imageUrl: '/images/skills/node-js.svg' },
+  { id: 7, name: 'ExpressJS', imageUrl: '/images/skills/express-js.svg' },
+  { id: 8, name: 'Firebase', imageUrl: '/images/skills/firebase.svg' },
+  { id: 9, name: 'Supabase', imageUrl: '/images/skills/supabase.svg' },
+  { id: 10, name: 'TailwindCSS', imageUrl: '/images/skills/tailwind-css.svg' },
+  { id: 11, name: 'PostgreeSQL', imageUrl: '/images/skills/postgree-sql.png' },
+  { id: 12, name: 'MongoDB', imageUrl: '/images/skills/mongo-db.png' },
+  { id: 13, name: 'MySQL', imageUrl: '/images/skills/my-sql.svg' },
+  { id: 14, name: 'Bootstrap', imageUrl: '/images/skills/bootstrap.svg' },
+  { id: 15, name: 'PHP', imageUrl: '/images/skills/php.svg' },
+  { id: 16, name: 'Laravel', imageUrl: '/images/skills/laravel.png' },
+  { id: 17, name: 'Codeigniter', imageUrl: '/images/skills/codeigniter.png' },
+  { id: 18, name: 'Dart', imageUrl: '/images/skills/dart.svg' },
+  { id: 19, name: 'Flutter', imageUrl: '/images/skills/flutter.svg' },
+  { id: 20, name: 'Figma', imageUrl: '/images/skills/figma.svg' },
+  { id: 20, name: 'Typescript', imageUrl: '/images/skills/typescript.svg' },
 ];

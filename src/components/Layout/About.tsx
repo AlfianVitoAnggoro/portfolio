@@ -1,5 +1,7 @@
+import { SOCIAL_MEDIA_DATA } from '@/constants';
 import ConnectLink from '../Fragments/ConnectLink';
 import { TextGenerateEffect } from '../ui/text-generate-effect';
+import { SocialMediaType } from '@/types';
 
 export default function About() {
   const words = `I am a Fullstack Web
@@ -28,31 +30,13 @@ export default function About() {
           <div className="space-y-3 h-full flex-1 flex flex-col justify-start items-center py-5 gap-5">
             <h1 className="text-center font-bold text-3xl">For Connect</h1>
             <div className="flex justify-center items-center gap-x-3">
-              <ConnectLink
-                link="https://github.com/alfianvitoanggoro"
-                icon="Github.svg"
-                alt="Github"
-              />
-              <ConnectLink
-                link="https://linkedin.com/in/alfianvitoanggoro"
-                icon="Linkedin.svg"
-                alt="Linkedin"
-              />
-              <ConnectLink
-                link="https://instagram.com/atokemen_"
-                icon="Instagram.svg"
-                alt="Instagram"
-              />
-              <ConnectLink
-                link="https://x.com/Atokemen_"
-                icon="X.svg"
-                alt="X"
-              />
-              <ConnectLink
-                link="https://youtube.com/@alfianvito"
-                icon="Youtube.svg"
-                alt="Youtube"
-              />
+              {SOCIAL_MEDIA_DATA.map((item: SocialMediaType, i: number) => (
+                <ConnectLink
+                  socialMediaUrl={item.socialMediaUrl}
+                  imageUrl={item.imageUrl}
+                  name={item.name}
+                />
+              ))}
             </div>
           </div>
         </div>

@@ -50,7 +50,7 @@ const CertificateCard = () => {
               ref={ref}
               className="relative max-w-[500px] h-auto md:h-fit laptop:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl "
             >
-              <motion.div layoutId={`image-${active.id}-${id}`}>
+              <motion.div layoutId={`image-${active.imageUrl}-${id}`}>
                 <img
                   width={200}
                   height={200}
@@ -122,7 +122,7 @@ const CertificateCard = () => {
             className="p-4 flex flex-col hover:text-black text-white hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col w-full">
-              <motion.div layoutId={`image-${card.id}-${id}`}>
+              <motion.div layoutId={`image-${card.imageUrl}-${id}`}>
                 <img
                   width={200}
                   height={200}
