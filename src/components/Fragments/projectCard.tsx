@@ -17,7 +17,7 @@ const ProjectCard: React.FC<React.PropsWithChildren<ProjectCardProps>> = ({
     <>
       <CardContainer
         className="inter-var w-full"
-        containerClassName="max-w-[800px] px-10"
+        containerClassName="max-w-[500px] px-10"
       >
         <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full sm:w-[30rem] h-auto rounded-xl p-6 border  ">
           <CardItem
@@ -29,7 +29,7 @@ const ProjectCard: React.FC<React.PropsWithChildren<ProjectCardProps>> = ({
           <CardItem
             as="p"
             translateZ="60"
-            className="text-neutral-500 text-[1.2rem] max-h-[200px] h-auto overflow-y-auto w-full mt-2 dark:text-neutral-300"
+            className="text-neutral-500 text-[1.2rem] max-h-[100px] h-auto overflow-y-auto w-full mt-2 dark:text-neutral-300"
           >
             {children}
           </CardItem>

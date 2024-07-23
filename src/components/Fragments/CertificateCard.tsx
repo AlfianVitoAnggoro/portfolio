@@ -48,7 +48,7 @@ const CertificateCard = () => {
             <motion.div
               layoutId={`card-${active.certificateName}-${id}`}
               ref={ref}
-              className="relative w-[90%] max-w-[700px] h-auto md:h-fit laptop:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl "
+              className="relative max-w-[500px] h-auto md:h-fit laptop:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl "
             >
               <motion.div layoutId={`image-${active.certificateName}-${id}`}>
                 <img
@@ -90,7 +90,7 @@ const CertificateCard = () => {
                       {active.certificateName}
                     </motion.h3>
                     <motion.p
-                      layoutId={`description-${active.author}-${id}`}
+                      layoutId={`description-${active.id}-${id}`}
                       className="text-black text-[1rem] font-medium dark:text-neutral-400 text-base"
                     >
                       {active.author}
@@ -103,7 +103,7 @@ const CertificateCard = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-800 text-sm md:text-sm lg:text-base md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] h-40"
+                    className="text-neutral-800 text-sm md:text-sm lg:text-base md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] h-28"
                   >
                     {active.description}
                   </motion.div>
@@ -117,7 +117,7 @@ const CertificateCard = () => {
         {cards.map((card, index) => (
           <motion.div
             layoutId={`card-${card.certificateName}-${id}`}
-            key={card.certificateName}
+            key={index}
             onClick={() => setActive(card)}
             className="p-4 flex flex-col hover:text-black text-white hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
@@ -139,7 +139,7 @@ const CertificateCard = () => {
                   {card.certificateName}
                 </motion.h3>
                 <motion.p
-                  layoutId={`description-${card.author}-${id}`}
+                  layoutId={`description-${card.id}-${id}`}
                   className="font-medium text-center text-[1rem] md:text-left text-base"
                 >
                   {card.author}
